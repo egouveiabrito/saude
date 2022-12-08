@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/home.css" rel="stylesheet" type="text/css" />
+    <link href="css/postos.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/postos.js"></script>
+
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBS0CMTl_bQYKNCiTBf2nH7910GczJMw3U" type="text/javascript"></script>
+
+    <title>Unidade de Saúde mais próxima</title>
+</head>
+<body>
+    <div id="conteudo">
+        <header>
+            <h1>Unidade de Saúde mais próxima</h1>
+            <header>
+                <div id="conteudo">
+
+                    <div class="selecao">
+                        <select>
+                            <option>teste</option>
+                            <option>teste</option>
+                            <option>teste</option>
+                            <option>teste</option>
+                        </select>
+                    </div>
+
+
+                    <div id="map"></div>
+
+                    <div class="buscar">
+                        <button>Nova Busca</button>
+                    </div>
+                    <div class="endereco">
+                        <footer>
+                            <address> Rua </address>
+                        </footer>
+                    </div>
+                </div>
+    </div>
+
+    <section id="menu">
+        <div class="logo">
+            <img src="img/pref.jpg" alt="logo">
+        </div>
+        <div class="botaoinicio">
+            <button href="home.html">
+                <a>
+                    <img id="imgbottomhome" src="img/iconhome.svg" alt="Home">
+                    <h1>Tela Inicial</h1>
+                </a>
+            </button>
+        </div>
+        <div class="lista">
+            <nav id="clientes">
+                <ul>
+                    <li>
+                        <button class="catpri">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M8.00008 15.5C6.86612 15.5032 5.74649 15.2466 4.72707 14.75C4.35399 14.5685 3.99652 14.3566 3.65832 14.1163L3.55557 14.0413C2.62544 13.3547 1.86498 12.4642 1.33257 11.438C0.781877 10.3759 0.496255 9.19637 0.500037 8C0.500037 3.85786 3.85794 0.5 8.00008 0.5C12.1422 0.5 15.5001 3.85786 15.5001 8C15.5039 9.19579 15.2185 10.3748 14.6683 11.4365C14.1367 12.4621 13.3773 13.3523 12.4483 14.039C12.0979 14.2955 11.726 14.5213 11.3368 14.714L11.2768 14.744C10.2568 15.2433 9.13577 15.5019 8.00008 15.5ZM8.00008 11.75C6.87618 11.7478 5.84582 12.3755 5.33232 13.3752C7.01337 14.2079 8.98678 14.2079 10.6678 13.3752V13.3715C10.1537 12.3729 9.12329 11.7466 8.00008 11.75ZM8.00008 10.25C9.62466 10.2521 11.1226 11.1276 11.9218 12.542L11.9331 12.5322L11.9436 12.5233L11.9308 12.5345L11.9233 12.5405C13.8201 10.9018 14.4983 8.25675 13.6241 5.90758C12.7498 3.55841 10.5074 2.00024 8.00083 2.00024C5.49426 2.00024 3.25182 3.55841 2.37759 5.90758C1.50336 8.25675 2.18158 10.9018 4.07832 12.5405C4.87802 11.1268 6.37585 10.252 8.00008 10.25ZM8.00008 9.5C6.34322 9.5 5.00007 8.15685 5.00007 6.5C5.00007 4.84315 6.34322 3.5 8.00008 3.5C9.65693 3.5 11.0001 4.84315 11.0001 6.5C11.0001 7.29565 10.684 8.05871 10.1214 8.62132C9.55879 9.18393 8.79572 9.5 8.00008 9.5ZM8.00008 5C7.17165 5 6.50008 5.67157 6.50008 6.5C6.50008 7.32843 7.17165 8 8.00008 8C8.8285 8 9.50008 7.32843 9.50008 6.5C9.50008 5.67157 8.8285 5 8.00008 5Z"
+                                    fill="white" />
+                            </svg>
+                            <span>Usuário <i class="uil uil-angle-up"></i> </span>
+                        </button>
+                        <ul class="menusec">
+                            <li><a href="#">Dados cadastrais </a></li>
+                            <li><a href="#">Histórico de vacinas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="exames">
+                <ul>
+                    <li>
+                        <button class="catpri">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                fill="none">
+                                <path
+                                    d="M15 15H3C2.19789 15.024 1.52731 14.395 1.5 13.593V4.40621C1.52731 3.60431 2.19801 2.97553 3 2.99996H15C15.802 2.97553 16.4727 3.60431 16.5 4.40621V13.5937C16.4723 14.3954 15.8018 15.024 15 15ZM3 4.49996V13.4917L15 13.5V4.50821L3 4.49996ZM10.0725 12H4.5C4.55514 11.379 4.84901 10.8036 5.31975 10.395C5.84387 9.87499 6.54811 9.57686 7.28625 9.56246C8.02439 9.57686 8.72863 9.87499 9.25275 10.395C9.72337 10.8037 10.0172 11.379 10.0725 12ZM13.5 11.25H11.25V9.74996H13.5V11.25ZM7.28625 8.99996C6.88431 9.01392 6.49461 8.86038 6.21022 8.57599C5.92583 8.2916 5.77228 7.9019 5.78625 7.49996C5.77251 7.09808 5.92613 6.70851 6.21046 6.42417C6.4948 6.13983 6.88437 5.98621 7.28625 5.99996C7.68813 5.98621 8.0777 6.13983 8.36204 6.42417C8.64637 6.70851 8.79999 7.09808 8.78625 7.49996C8.80022 7.9019 8.64667 8.2916 8.36228 8.57599C8.07789 8.86038 7.68819 9.01392 7.28625 8.99996ZM13.5 8.24996H10.5V6.74996H13.5V8.24996Z"
+                                    fill="black" />
+                            </svg>
+                            <span>Serviços</span>
+                        </button>
+                        <ul class="menusec">
+                            <li><a href="#">Agendamento de vacina</a></li>
+                            <li><a href="#">Cartão virtual</a></li>
+                            <li><a href="duvidas.html">Duvidas frequentes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="ralatorios">
+                <ul>
+                    <li>
+                        <button class="catpri">
+                            <img src="img/localizacao.png">
+                            <span>Postos</span>
+                        </button>
+                        <ul class="menusec">
+                            <li><a href="postos.html">Localização</a></li>
+                            <li><a href="#">Calendário de vacinas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="FooterMenu">
+            <div id="Exit">
+                <a href="#">
+                    <img src="img/sair.png">
+                    <span>Sair</span>
+                </a>
+            </div>
+            <div id="SUS">
+                <img src="img/image5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

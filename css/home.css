@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@583&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: revert;
+}
+:root {
+  --cor-preto: #000000;
+  --cor-branco: #ffffff;
+  --cor-cinzaclaro: #f2f2f2;
+  --cor-cinza: #E4E5F5;
+  --cor-cinzaescuro: #E4E5F5;
+  --cor-laranja: #6CBBD9;
+  --cor-mustarda: #DF9C00;
+}
+
+
+/*RRESET BT*/
+ul{
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/*FONTE*/
+h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  margin-bottom: 0;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+a {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+span {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 0;
+}
+
+/*BG*/
+body {
+  background-color: var(--cor-cinzaclaro);
+}
+
+/*HEADER ==============================================================*/
+
+header p {
+  font-size: 1vw;
+  font-weight: 500;
+  padding: 1vw;
+}
+header a {
+  text-decoration: none;
+  color: var(--cor-branco);
+  position: absolute;
+  right: 4vw;
+  font-size: 1vw;
+  font-weight: 500;
+}
+header svg {
+  position: absolute;
+  right: 2vw;
+  bottom: 0.7vh;
+}
+header a:hover{
+  color: var(--cor-branco);
+}
+
+
+/*MENU ==============================================================*/
+#menu {
+  background-color: var(--cor-branco);
+  width: 18vw;
+  height: 100vh;
+  filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 0.25));
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1vh;
+  position: fixed;
+  margin: 0; padding: 0;
+
+}
+
+/*LOGO*/
+.logo {
+  margin: 5vh 0;
+}
+
+.logo img {
+  width: 15vw;
+}
+
+/*BOTAO INICIO*/
+
+#imgbottomhome {
+  width: 22px;
+}
+.botaoinicio {
+  margin-bottom: 3vh;
+}
+.botaoinicio button {
+  width: 16vw;
+  height: 5vh;
+  background-color: var(--cor-laranja);
+  border: 0;
+  border-radius: 1.3vh;
+  text-align: initial;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+.botaoinicio button a {
+  text-decoration: none;
+  display: flex;
+}
+.botaoinicio button h1 {
+  color: var(--cor-branco);
+  font-weight: 500;
+  font-size: 1.5vw;
+  padding-left: 0.5vw;
+}
+
+/*CATEGORIAS*/
+.lista a {
+  text-decoration: none;
+}
+.lista li {
+  list-style: none;
+}
+.lista {
+  width: 17vw;
+}
+
+/*PRIMARIOS*/
+.catpri {
+  background-color: var(--cor-branco);
+  border: none;
+  width: 17vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-left: 1vw;
+  margin-top: 1vh;
+}
+.catpri span {
+  padding-left: 0.5vw;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+.catpri:hover {
+  background-color: var(--cor-cinzaclaro);
+}
+.catpri path {
+  fill: var(--cor-preto);
+}
+/*SECUNDARIOS*/
+.menusec {
+  display: none;
+  background-color: var(--cor-cinza);
+}
+.menusec li {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+}
+.menusec li:hover a {
+  color: var(--cor-mustarda);
+}
+.menusec a {
+  color: var(--cor-preto);
+  padding-left: 2.5vw;
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+/*ATIVADOR MENU*/
+.menusecAtivo > .menusec {
+  display: block;
+}
+.menusecAtivo > .catpri {
+  background-color: var(--cor-laranja);
+}
+.menusecAtivo > .catpri span {
+  color: var(--cor-branco);
+}
+
+.menusecAtivo > .catpri path {
+  fill: var(--cor-branco);
+}
+
+/*FOOTER MENU*/
+#FooterMenu{
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/*GERENCIAMENTO*/
+
+#Exit button {
+  border: none;
+  background-color: var(--cor-branco);
+  display: flex;
+  align-items: center;
+  width: 17vw;
+  height: 5vh;
+  padding-left: 1vw;
+  cursor: pointer;
+}
+
+#Exit a {
+  text-decoration: none;
+  display: flex;
+}
+#Exit span {
+  text-decoration: none;
+  color: var(--cor-preto);
+  font-size: 1vw;
+  font-weight: 500;
+  padding-left: 0.5vw;
+}
+
+/*USUARIO*/
+#SUS {
+    width: 108px;
+    height: 58px;
+    left: 103px;
+    top: 900px;
+    margin-top: 15px;
+}
+

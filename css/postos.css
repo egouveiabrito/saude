@@ -1,0 +1,44 @@
+table {
+    border-collapse: collapse;
+}
+
+tbody{
+    padding-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+
+#conteudo {
+    padding-top:50px;
+    width: 80%;
+    float: right;
+    text-align: center;
+    background-color: #E4E5F5;
+}
+
+.selecao{
+    padding-bottom: 50px;
+    
+}
+
+.buscar{
+    padding-top: 10px;
+    padding-left: 60px;
+}
+
+#map{
+    padding-right: 100px;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.endereco{
+   padding: 10px; 
+   padding-left: 70px;
+}
+
